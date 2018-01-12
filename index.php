@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+<script src="js/jquery-3.2.1.js"></script>
+
 </head>
 <body>
+<br>
+<div class="container">
+	<div class="row">
+		<img class="scaleimage" height="50px"alt="" src="images/disk.png">
 
-<!-------------------------------------------------------------------------
-1) Create some html content that can be accessed by jquery
--------------------------------------------------------------------------->
+		<h1> Welcome to the Disk Inventory </h1>
+	</div>
+</div>
+
+<br>
+
+<div class="container">
+
 <p>What information do you want to look at?</p>
 
+<form>
 <select id="tables">
-<option value="" selected disabled>Select One</option>
 <option value="artists">Artists</option>
 <option value="borrowers">Borrowers</option>
 <option value="disks">Disks</option>
 </select>
+<input type="button" value="Submit" onClick="post();">
+</form>
 
-<div id="displaydata">Should replace this</div>
+<div id="tables-data">Should replace this</div>
 
-<script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+</div>
+
+
 <script src="js/global.js"></script>
 
 </body>

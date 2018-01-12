@@ -1,21 +1,25 @@
-$(document).ready(function(){
-	"use strict";
-	$('#tables').on('change', function(){
+
+
+// $('#tables').on('change', function(){
+
+function post(){
 	var table = $('#tables').val();
-	
+
 	alert('made it here');
-	
+
 	if(table == "artists")
 		{
-			$.post('ajax/artists.php', { tableselected: table }, function(data) {
-				$('#displaydata').text(data);
+			$.post('artists.php', { posttable: table }, function(data) {
+				$('tables-data').html(data);
 			});
-			
+
 		}
 	else if(table == "borrowers")
 		{
 			alert('your post isnt working');	
 		}
-});
-	
-});
+
+}
+
+
+//});
