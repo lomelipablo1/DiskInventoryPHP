@@ -1,20 +1,25 @@
+<!DOCTYPE html>
 <html>
-
+<head>
+</head>
 <body>
 
-<h1>A small example page to insert some data in to the MySQL database using PHP</h1>
+<!-------------------------------------------------------------------------
+1) Create some html content that can be accessed by jquery
+-------------------------------------------------------------------------->
+<p>What information do you want to look at?</p>
 
-<form action="insert.php" method="post">
+<select id="tables">
+<option value="" selected disabled>Select One</option>
+<option value="artists">Artists</option>
+<option value="borrowers">Borrowers</option>
+<option value="disks">Disks</option>
+</select>
 
-Firstname: <input type="text" name="fname" /><br><br>
+<div id="displaydata">Should replace this</div>
 
-Lastname: <input type="text" name="lname" /><br><br>
-
- 
-
-<input type="submit" />
-
-</form>
+<script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script src="js/global.js"></script>
 
 </body>
 </html>
